@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo clínico de protocolos de sueroterapia funcional de Health Today Care.">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light">
+  <title>Catálogo Clínico | Health Today Care</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+    <header id="mobile-header" class="mobile-header">
+      <a class="brand-mini" href="#catalogo" aria-label="Ir al catálogo">
+        <img src="assets/logo.svg" alt="" width="32" height="32">
+        <span>Health Today Care</span>
+      </a>
+      <button id="open-sidebar" class="icon-button" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">☰</button>
+    </header>
+
+    <aside id="sidebar" class="sidebar" aria-label="Navegación del catálogo">
+      <div class="sidebar-brand">
+        <a href="#catalogo" class="brand-block" aria-label="Health Today Care, catálogo clínico">
+          <img src="assets/logo.svg" alt="Health Today Care" width="48" height="48">
+          <span>
+            <strong>Health Today Care</strong>
+            <small>Catálogo Clínico</small>
+          </span>
+        </a>
+        <button id="close-sidebar" class="icon-button mobile-only" type="button" aria-label="Cerrar menú">×</button>
+      </div>
+
+      <div class="sidebar-tools">
+        <label class="search-box" for="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Buscar protocolo..." autocomplete="off" spellcheck="false">
+          <button id="clear-search" class="clear-search" type="button" aria-label="Limpiar búsqueda" hidden>×</button>
+        </label>
+        <button id="print-button" class="button button-dark" type="button">▣ &nbsp; Imprimir catálogo</button>
+      </div>
+
+      <nav id="protocol-list" class="protocol-list" aria-label="Lista de protocolos"></nav>
+    </aside>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+    <section id="print-container" class="print-container" aria-hidden="true"></section>
+  </div>
+
+  <noscript>
+    <div class="noscript">Este catálogo necesita JavaScript habilitado para mostrar los protocolos.</div>
+  </noscript>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
